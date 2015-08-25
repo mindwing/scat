@@ -1,3 +1,5 @@
+package scat
+
 /**
  * Created by mindwing on 2015-08-25.
  */
