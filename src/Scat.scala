@@ -3,6 +3,15 @@
  */
 object Scat {
   def main(args: Array[String]) {
-    println("It's Scat!!!")
+    val firstArg = if (!args.isEmpty) args(0) else ""
+
+    val result =
+      firstArg match {
+        case "find" => Find.find(args)
+        case "help" => Help.help
+        case _ => Help.error
+      }
+
+    println(result)
   }
 }
